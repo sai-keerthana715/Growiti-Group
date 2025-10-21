@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title data-key="aboutTitle">About — Growiti Group</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {pageLanguage: 'en', includedLanguages: 'en,te,hi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE},
+      'google_translate_element'
+    );
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo.jpg" alt="" class="logo">
+        <span data-key="brand">Growiti Group</span>
+      </a>
+      <button id="navToggle" class="menu-icon" aria-label="Toggle Menu">☰</button>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" data-key="home">Home</a>
+        <a href="about.html" class="active" data-key="about">About</a>
+        <a href="services.html" data-key="services">Services</a>
+        <a href="success.html" data-key="success">Success Stories</a>
+        <a href="blog.html" data-key="blog">Blog</a>
+        <a href="portfolio.html" data-key="portfolio">Portfolio</a>
+        <a href="contact.html" class="cta" data-key="contact">Contact</a>
+        <div id="google_translate_element"></div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Intro -->
+    <section class="about-highlight">
+      <h1 data-key="aboutHeading">About Growiti Group</h1>
+      <p data-key="aboutIntro">Growiti Group is a Hyderabad-based partnership firm committed to supporting companies through their growth journeys. Our mission is to empower companies by providing expert consulting and investment solutions that drive sustainable growth.</p>
+    </section>
+
+    <!-- Mission / Vision Cards -->
+    <section class="about-cards fade-in">
+      <div class="about-card">
+    <h2 style="color: #ffce54;" data-key="missionTitle">
+      <i class="fa-solid fa-bullseye" style="color: #fff; margin-right: 8px;"></i>
+      Our Mission
+    </h2>
+    <p data-key="missionText">
+      To empower companies in Hyderabad and beyond by providing expert consulting and investment solutions that fuel sustainable growth.
+    </p>
+  </div>
+
+      <div class="about-card">
+    <h2 style="color: #ffce54;" data-key="visionTitle">
+      <i class="fa-solid fa-rocket" style="color: #fff; margin-right: 8px;"></i>
+      Our Vision
+    </h2>
+    <p data-key="visionText">
+      To be the most trusted growth and investment partner for emerging and established companies worldwide.
+    </p>
+  </div>
+
+      <div class="about-card">
+    <h2 style="color: #ffce54;" data-key="valuesTitle">
+      <i class="fa-solid fa-gem" style="color: #fff; margin-right: 8px;"></i>
+      Our Values
+    </h2>
+    <p data-key="valuesText">
+    Our values reflect our commitment to excellence, trust, and long-term partnerships. 
+    We believe in building meaningful relationships with clients.
+  </p>
+  </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong data-key="brand">Growiti Group</strong><br>
+        <span data-key="address">Hyderabad, India</span><br>
+        <span data-key="email">Email: contact@growitigroup.com</span>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html" data-key="privacy">Privacy</a>
+        <a href="contact.html" data-key="contactFooter">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+  const toggleButton = document.querySelector('.menu-icon');
+  const navMenu = document.querySelector('nav');
+
+  toggleButton.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

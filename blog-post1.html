@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blog Post - Growiti Group</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {pageLanguage: 'en', includedLanguages: 'en,te,hi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE},
+      'google_translate_element'
+    );
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+  <!-- ✅ Navbar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo.jpg" alt="" class="logo">
+        <span>Growiti Group</span>
+      </a>
+      <button id="navToggle" class="menu-icon" aria-label="Toggle Menu">☰</button>
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="success.html">Success Stories</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="portfolio.html" data-key="portfolio">Portfolio</a>
+        <a href="contact.html" class="cta">Contact</a>
+        <div id="google_translate_element"></div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ✅ Blog Post -->
+  <main class="container blog-post">
+    <article>
+      <header class="post-header">
+        <h1>How Strategic Growth Can Transform Your Business</h1>
+        <p class="post-meta">By Growiti Group • August 2025</p>
+        <p class="lead">A detailed look at the proven strategies used by Growiti Group to help businesses scale successfully.</p>
+      </header>
+
+      <section class="post-content">
+        <h2>5 Proven Strategies to Accelerate Startup Growth</h2>
+
+        <h3>1. Focus on Product-Market Fit</h3>
+        <p>Make sure your product truly solves a real problem for your target customers. Continuously gather feedback and improve your offering. When your product fits the market need perfectly, growth becomes much easier and more sustainable.</p>
+
+        <h3>2. Leverage Digital Marketing and Social Media</h3>
+        <p>Use targeted online advertising (Google Ads, Facebook Ads) to reach potential customers. Build a strong presence on social media platforms to engage your audience. Content marketing, SEO, and influencer partnerships can help build brand awareness and attract users organically.</p>
+
+        <h3>3. Build a Scalable Sales Process</h3>
+        <p>Develop a repeatable sales strategy that can grow with your startup. Use CRM tools to manage leads and automate follow-ups. Train your sales team to focus on high-value prospects and close deals faster.</p>
+
+        <h3>4. Focus on Customer Retention and Referral</h3>
+        <p>It’s cheaper to keep an existing customer than acquire a new one. Provide excellent customer support and build strong relationships. Encourage happy customers to refer others — word-of-mouth is powerful for startups.</p>
+
+        <h3>5. Seek Strategic Partnerships and Funding</h3>
+        <p>Collaborate with other companies to access new markets or technologies. Secure investment from venture capitalists or angel investors to scale faster. Use funding to accelerate product development, marketing, and hiring.</p>
+      </section>
+    </article>
+  </main>
+
+  <!-- ✅ Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Growiti Group</strong><br>
+        Hyderabad, India<br>
+        Email: contact@growitigroup.com
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+  const toggleButton = document.querySelector('.menu-icon');
+  const navMenu = document.querySelector('nav');
+
+  toggleButton.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+</body>
+</html>
+
+<style>
+/* 🔹 Blog Post Layout */
+.blog-post {
+  max-width: 850px;
+  margin: 2rem auto;
+  padding: 2rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.15);
+  line-height: 1.7;
+}
+
+/* Headings */
+.blog-post h1, 
+.blog-post h2, 
+.blog-post h3 {
+  color: #ffce54;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.blog-post h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.2rem);
+  margin-bottom: 1rem;
+}
+
+.blog-post h2 {
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+  margin-top: 2rem;
+}
+
+.blog-post h3 {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  margin-top: 1.2rem;
+}
+
+/* Lead text */
+.blog-post .lead {
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #f9f9f9;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.6);
+}
+
+/* Meta info */
+.post-meta {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #ddd;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+.blog-post p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-post {
+    padding: 1.5rem;
+  }
+  .blog-post h1 { font-size: 1.6rem; }
+  .blog-post h2 { font-size: 1.3rem; }
+  .blog-post h3 { font-size: 1.1rem; }
+}
+</style>

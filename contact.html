@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Growiti Group</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {pageLanguage: 'en', includedLanguages: 'en,te,hi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE},
+      'google_translate_element'
+    );
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<style>
+.contact-page { max-width: 1100px; margin: 3rem auto; padding: 2rem; }
+.page-title { text-align: center; font-size: 2rem; font-weight: 700; color: #ffce54; margin-bottom: 2rem; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2.5rem; }
+.contact-info { background: transparent; border-radius: 12px; padding: 1.5rem 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border: 2px solid gray; color: #fff; }
+.contact-info h2 { margin-bottom: 1rem; font-size: 1.4rem; color: #fff; }
+.contact-info p { margin: 0.4rem 0; font-size: 1rem; line-height: 1.5; }
+.map-container { border: 2px solid gray; border-radius: 12px; overflow: hidden; height: 100%; min-height: 300px; }
+.map-container iframe { width: 100%; height: 100%; border: 0; }
+.contact-form { background: transparent; border-radius: 12px; padding: 2rem; box-shadow: 0 6px 18px rgba(0,0,0,0.1); display: flex; flex-direction: column; gap: 1rem; border: 2px solid gray; color: #fff; }
+.contact-form h2 { margin-bottom: 1rem; font-size: 1.4rem; color: #fff; }
+.contact-form label { font-size: 0.9rem; font-weight: 500; color: #fff; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 0.9rem 1rem; border: 1px solid gray; border-radius: 8px; font-size: 1rem; background: transparent; color: #fff; }
+.contact-form input:focus, .contact-form textarea:focus { border-color: gray; outline: none; box-shadow: 0 0 6px rgba(42,77,145,0.3); }
+.contact-form .btn { background: #ffce54; color: #000; padding: 1rem; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.3s ease; }
+.contact-form .btn:hover { background: #e6b847; }
+.form-msg { margin-top: 0.5rem; font-size: 0.9rem; font-weight: 500; color: #d9534f; }
+@media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+.goog-te-gadget-icon { display: none !important; }
+#google_translate_element select { padding: 2px; border-radius: 6px; border: 1px solid #ccc; background: #fff; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+<div class="container header-inner">
+<a href="index.html" class="brand">
+<img src="assets/images/logo.jpg" alt="Growiti Group Logo" class="logo">
+<span>Growiti Group</span>
+</a>
+<nav class="nav">
+  <button id="navToggle" class="menu-icon" aria-label="Toggle Menu">☰</button>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="success.html">Success Stories</a>
+<a href="blog.html" data-key="blog">Blog</a>
+<a href="portfolio.html" data-key="portfolio">Portfolio</a>
+<a href="contact.html" class="active">Contact</a>
+<div id="google_translate_element"></div>
+</nav>
+</div>
+</header>
+
+<main class="container contact-page">
+<h1 class="page-title">Contact</h1>
+<div class="contact-grid">
+<div class="contact-info">
+<h2>Contact Information</h2>
+<p><strong>📍 Address:</strong><br>H.No 8-3-409/1,410, #102, Ram Chabbra Vihar<br>Yellareddyguda, Hyderabad – 500 073<br>Telangana, India</p>
+<p><strong>📧 Email:</strong> contact@growitigroup.com</p>
+<p><strong>📞 Phone:</strong> +91-9876543210</p>
+</div>
+<div class="map-container">
+<iframe src="https://www.google.com/maps?q=Yellareddyguda,Hyderabad&output=embed" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</div>
+
+<form id="contactForm" class="contact-form">
+<h2>Get in Touch</h2>
+<label for="name">Name</label>
+<input type="text" id="name" required>
+<label for="email">Email</label>
+<input type="email" id="email" required>
+<label for="phone">Phone</label>
+<input type="tel" id="phone">
+<label for="message">Message</label>
+<textarea id="message" rows="5" required></textarea>
+<label for="captchaInput">Solve: <span id="captchaQuestion"></span></label>
+<input type="text" id="captchaInput" required placeholder="Enter answer">
+<button type="submit" class="btn">Submit</button>
+<p id="formMsg" class="form-msg"></p>
+</form>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong data-key="brand">Growiti Group</strong><br>
+        <span data-key="address">Hyderabad, India</span><br>
+        <span data-key="email">Email: contact@growitigroup.com</span>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html" data-key="privacy">Privacy</a>
+        <a href="contact.html" data-key="contactFooter">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+<script>
+let captchaAnswer;
+function generateCaptcha() {
+  const num1 = Math.floor(Math.random() * 10) + 1;
+  const num2 = Math.floor(Math.random() * 10) + 1;
+  captchaAnswer = num1 + num2;
+  document.getElementById("captchaQuestion").textContent = `${num1} + ${num2} = ?`;
+}
+
+document.getElementById("contactForm").addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const msg = document.getElementById("formMsg");
+
+  const userAnswer = document.getElementById("captchaInput").value;
+  if (parseInt(userAnswer) !== captchaAnswer) {
+    msg.style.color = "red";
+    msg.textContent = "❌ Captcha answer is incorrect. Try again!";
+    generateCaptcha();
+    return;
+  }
+
+  const formData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+    message: document.getElementById("message").value,
+  };
+
+  try {
+    const res = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+    if (data.success) {
+      msg.style.color = "limegreen";
+      msg.textContent = "✅ " + data.message;
+      document.getElementById("contactForm").reset();
+      generateCaptcha();
+    } else {
+      msg.style.color = "red";
+      msg.textContent = "❌ " + data.message;
+    }
+  } catch (err) {
+    console.error(err);
+    msg.style.color = "red";
+    msg.textContent = "❌ Failed to send. Check server.";
+  }
+});
+
+window.onload = generateCaptcha;
+</script>
+<script>
+  const toggleButton = document.querySelector('.menu-icon');
+  const navMenu = document.querySelector('nav');
+
+  toggleButton.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+</body>
+</html>
